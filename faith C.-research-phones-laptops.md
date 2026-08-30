@@ -1,0 +1,4 @@
+ANADU FAITH CHARITY 
+I researched the trust problem for second-hand phones and laptops in Nigeria. I found real evidence on stolen-device rates, a documented case of a buyer getting a stolen iPhone years after purchase, and gaps in how Jiji verifies sellers — no post-sale ratings or accountability once a sale happens. I also used a personal example (a friend's MacBook that failed within a month with no recourse) to show why hidden faults matter as much as theft.
+From this I proposed the escrow and verification features we're building into the marketplace: IMEI/serial checks before listing, admin holds the payments until goods is confirmed, a 48-hour refund window, and post-delivery reviews.
+This will bring real solution to the problem of trust in Nigeria among students and workers who earn less and improve the general quality of life.
