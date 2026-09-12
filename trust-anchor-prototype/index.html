@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trust Anchor | Check First. Pay Safe.</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav aria-label="Main navigation">
+
+    <a href="#home" class="logo">
+        <img src="image/Anchor logo bb.png" alt="Trust Anchor Logo">
+    </a>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="btn-primary" onclick="focusSearch()">
+        Get Started
+    </button>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <span class="eyebrow">
+            Safer second-hand phone transactions
+        </span>
+
+        <h1>
+            Know who you're buying from
+            <span>before you pay.</span>
+        </h1>
+
+        <p>
+            Trust Anchor helps buyers check the reputation of second-hand
+            phone sellers through seller profiles, verified transactions,
+            ratings and reports.
+        </p>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <label class="sr-only" for="sellerInput">
+                Search seller
+            </label>
+
+            <input
+                type="text"
+                id="sellerInput"
+                placeholder="Enter seller name or Trust ID"
+            >
+
+            <button type="button" onclick="searchSeller()">
+                Search Seller
+            </button>
+
+        </div>
+
+        <div id="searchResult" aria-live="polite" hidden></div>
+
+
+        <!-- HERO BUTTONS -->
+
+        <div class="buttons">
+
+            <button class="btn-primary" onclick="focusSearch()">
+                Check a Seller
+            </button>
+
+            <button class="btn-secondary" onclick="goToHowItWorks()">
+                How It Works →
+            </button>
+
+        </div>
+
+        <p class="prototype-note">
+            Prototype demonstration for second-hand phone transactions.
+        </p>
+
+    </div>
+
+
+    <!-- DEMO SELLER CARD -->
+
+    <div class="seller-card">
+
+        <div class="demo-label">
+            DEMO PROFILE
+        </div>
+
+        <h3>Seller Reputation Preview</h3>
+
+        <div class="seller">
+
+            <div class="seller-header">
+
+                <h2>Abdul Phones</h2>
+
+                <span class="status-pill verified">
+                    Verified
+                </span>
+
+            </div>
+
+            <div class="seller-meta">
+
+                <p>
+                    <span>Trust ID</span>
+                    <strong>TA-FUTA-001</strong>
+                </p>
+
+                <p>
+                    <span>Trust Score</span>
+                    <strong>91/100</strong>
+                </p>
+
+                <p>
+                    <span>Verified Sales</span>
+                    <strong>37</strong>
+                </p>
+
+                <p>
+                    <span>Reviews</span>
+                    <strong>★★★★☆</strong>
+                </p>
+
+                <p>
+                    <span>Reports</span>
+                    <strong>1</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PROBLEM ================= -->
+
+<section class="problem-section" id="problem">
+
+    <div class="section-heading">
+
+        <span class="section-tag">THE PROBLEM</span>
+
+        <h2>
+            Buying a second-hand phone should not be a gamble.
+        </h2>
+
+        <p>
+            Buyers often meet sellers they do not know and have little
+            reliable information to check before making payment.
+        </p>
+
+    </div>
+
+
+    <div class="problem-grid">
+
+        <div class="problem-card">
+
+            <div class="problem-icon">?</div>
+
+            <h3>Unknown Sellers</h3>
+
+            <p>
+                A buyer may have no reliable way to know the seller's
+                previous transaction history.
+            </p>
+
+        </div>
+
+
+        <div class="problem-card">
+
+            <div class="problem-icon">!</div>
+
+            <h3>Hidden Risk</h3>
+
+            <p>
+                Complaints, previous reports and bad transaction
+                experiences may not be visible to a new buyer.
+            </p>
+
+        </div>
+
+
+        <div class="problem-card">
+
+            <div class="problem-icon">₦</div>
+
+            <h3>Payment Pressure</h3>
+
+            <p>
+                Buyers may be pressured to make payment before they have
+                enough information to make a confident decision.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="problem-statement">
+
+        <span>The question Trust Anchor answers:</span>
+
+        <strong>
+            “What can I actually check about this seller before I pay?”
+        </strong>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="how-it-works" id="how-it-works">
+
+    <div class="section-heading dark-heading">
+
+        <span class="section-tag">HOW IT WORKS</span>
+
+        <h2>From seller search to safer decisions.</h2>
+
+        <p>
+            Trust Anchor gives buyers a simple four-step process.
+        </p>
+
+    </div>
+
+
+    <div class="steps">
+
+
+        <div class="step">
+
+            <div class="step-number">01</div>
+
+            <h3>Search Seller</h3>
+
+            <p>
+                Enter the seller's name or Trust ID to find their
+                Trust Anchor profile.
+            </p>
+
+            <span class="step-arrow">→</span>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">02</div>
+
+            <h3>Check Reputation</h3>
+
+            <p>
+                Review the seller's trust score, verified sales,
+                ratings and reports.
+            </p>
+
+            <span class="step-arrow">→</span>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">03</div>
+
+            <h3>Verify Transaction</h3>
+
+            <p>
+                A unique transaction code can be used to register and
+                confirm a transaction between buyer and seller.
+            </p>
+
+            <span class="step-arrow">→</span>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">04</div>
+
+            <h3>Leave Feedback</h3>
+
+            <p>
+                After a verified transaction, the buyer can leave
+                feedback that contributes to the seller's reputation.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BENEFITS ================= -->
+
+<section class="benefits">
+
+    <div class="section-heading">
+
+        <span class="section-tag">WHY TRUST ANCHOR?</span>
+
+        <h2>Trust benefits both sides of the transaction.</h2>
+
+    </div>
+
+
+    <div class="benefit-grid">
+
+
+        <div class="benefit-card">
+
+            <span class="benefit-label">FOR BUYERS</span>
+
+            <h3>Something real to check.</h3>
+
+            <p>
+                Buyers can look at a seller's reputation before deciding
+                whether to continue with a transaction.
+            </p>
+
+            <ul>
+                <li>Seller identity and Trust ID</li>
+                <li>Transaction history</li>
+                <li>Ratings and feedback</li>
+                <li>Reports and reputation</li>
+            </ul>
+
+        </div>
+
+
+        <div class="benefit-card">
+
+            <span class="benefit-label">FOR SELLERS</span>
+
+            <h3>A reputation you can build.</h3>
+
+            <p>
+                Honest sellers can build a visible transaction history
+                that makes it easier for future buyers to trust them.
+            </p>
+
+            <ul>
+                <li>Build buyer confidence</li>
+                <li>Show successful transactions</li>
+                <li>Collect verified feedback</li>
+                <li>Grow seller reputation</li>
+            </ul>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT / CTA ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-box">
+
+        <span class="section-tag">
+            TRUST ANCHOR
+        </span>
+
+        <h2>
+            Check First.
+            <span>Pay Safe.</span>
+        </h2>
+
+        <p>
+            Starting with second-hand phone transactions among students,
+            Trust Anchor is designed to make trust more visible before payment.
+        </p>
+
+        <button class="btn-primary" onclick="focusSearch()">
+            Check a Seller →
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <img src="image/Anchor logo bb.png" alt="Trust Anchor">
+
+        <p>
+            Something real to check before you pay.
+        </p>
+
+    </div>
+
+    <p class="footer-note">
+        Trust Anchor Prototype • Anchor Pod
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
